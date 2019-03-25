@@ -6,7 +6,6 @@ public class Ox {
         int o = 0;
         char[] letteres = str.toCharArray();
         for( char letter : letteres ){
-
             if(letter == 'x'){
                 x++;
             }
@@ -14,11 +13,7 @@ public class Ox {
                 o++;
             }
         }
-
-        if(x==o){
-            return true;
-        }
-        return false;
+        return x == o;
     }
 
 }
